@@ -35,7 +35,7 @@ private func CGPointMinus(p: CGPoint, _ q: CGPoint) -> CGPoint {
     return CGPoint(x: p.x - q.x, y: p.y - q.y)
 }
 
-extension CAMediaTimingFunction {
+public extension CAMediaTimingFunction {
     public func getControlPoint(index: UInt) -> (x: CGFloat, y: CGFloat)? {
         switch index {
         case 0 ... 3:
@@ -105,7 +105,7 @@ extension CAMediaTimingFunction {
     }
 }
 
-extension UICollectionView: AnimatedScroll {
+public extension UICollectionView: AnimatedScroll {
     var displayLink: CADisplayLink? {
         get {
             return objc_getAssociatedObject(self, &displayLinkKey) as? CADisplayLink
