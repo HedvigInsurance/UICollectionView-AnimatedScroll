@@ -105,7 +105,7 @@ extension CAMediaTimingFunction {
     }
 }
 
-public extension UICollectionView: AnimatedScroll {
+extension UICollectionView: AnimatedScroll {
     var displayLink: CADisplayLink? {
         get {
             return objc_getAssociatedObject(self, &displayLinkKey) as? CADisplayLink
