@@ -35,7 +35,7 @@ private func CGPointMinus(p: CGPoint, _ q: CGPoint) -> CGPoint {
     return CGPoint(x: p.x - q.x, y: p.y - q.y)
 }
 
-public extension CAMediaTimingFunction {
+extension CAMediaTimingFunction {
     public func getControlPoint(index: UInt) -> (x: CGFloat, y: CGFloat)? {
         switch index {
         case 0 ... 3:
