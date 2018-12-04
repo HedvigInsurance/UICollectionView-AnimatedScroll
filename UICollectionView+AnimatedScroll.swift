@@ -178,7 +178,7 @@ public extension UICollectionView: AnimatedScroll {
         }
     }
 
-    func setContentOffset(offset: CGPoint, timingFunction: CAMediaTimingFunction, duration: CFTimeInterval) {
+    public func setContentOffset(offset: CGPoint, timingFunction: CAMediaTimingFunction, duration: CFTimeInterval) {
         self.duration = duration
         self.timingFunction = timingFunction
         deltaContentOffset = CGPointMinus(p: offset, contentOffset)
