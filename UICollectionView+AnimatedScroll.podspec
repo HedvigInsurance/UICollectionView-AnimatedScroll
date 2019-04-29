@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/HedvigInsurance/UICollectionView-AnimatedScroll.git', :tag => '1.0.4' }
 
   s.ios.deployment_target = '9.0'
-  s.source_files = 'UICollectionView+AnimatedScroll.swift'
+  s.source_files = 'UICollectionView+AnimatedScroll/UICollectionView+AnimatedScroll.swift'
   s.swift_version = '4.2'
 end
